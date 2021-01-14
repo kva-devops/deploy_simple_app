@@ -1,0 +1,13 @@
+version: "3"
+services:
+  nginx:
+    image: myapp-image1:nginx
+    build:
+      context: .
+      dockerfile: ./myapp/nginx/Dockerfile
+
+  php:
+    image: myapp-image-part2:php
+    build:
+      context: .
+      dockerfile: ./myapp/php/Dockerfile
