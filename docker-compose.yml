@@ -7,7 +7,7 @@ services:
       dockerfile: ./myapp/nginx/Dockerfile
 
   php:
-    image: myapp-image-part2:php
+    image: myapp-image2:php
     build:
       context: .
       dockerfile: ./myapp/php/Dockerfile
